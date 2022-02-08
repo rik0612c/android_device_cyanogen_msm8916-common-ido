@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler
@@ -66,7 +65,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 # Config Store
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.1-service 
 
 # Display
@@ -130,9 +128,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 PRODUCT_PACKAGES += \
     libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 # Init scripts
 PRODUCT_PACKAGES += \
