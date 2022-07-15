@@ -31,7 +31,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=threaded \
     persist.hwc.mdpcomp.enable=true \
     persist.hwc.ptor.enable=true \
-    persist.hwc.pubypass=true
+    persist.hwc.pubypass=true \
+    persist.log.tag.OpenGLRenderer=S
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
