@@ -66,6 +66,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false \
     ro.vndk.version=current
 
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.ffs.aio_compat=1 \
+    persist.adb.nonblocking_ffs=0 \
+    ro.adb.nonblocking_ffs=0 \
+    sys.usb.mtp.device_type=2
+
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
