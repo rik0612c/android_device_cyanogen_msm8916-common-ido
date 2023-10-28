@@ -22,6 +22,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.hfp.ver=1.7 \
     ro.bluetooth.sap=true \
     ro.qualcomm.bt.hci_transport=smd
+  
+# Bluetooth props for A13
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.class_of_device=90,2,12 \
+    bluetooth.profile.a2dp.source.enabled?=true \
+    bluetooth.profile.asha.central.enabled?=true \
+    bluetooth.profile.avrcp.target.enabled?=true \
+    bluetooth.profile.bas.client.enabled?=true \
+    bluetooth.profile.gatt.enabled?=true \
+    bluetooth.profile.hfp.ag.enabled?=true \
+    bluetooth.profile.hid.device.enabled?=true \
+    bluetooth.profile.hid.host.enabled?=true \
+    bluetooth.profile.map.server.enabled?=true \
+    bluetooth.profile.opp.enabled?=true \
+    bluetooth.profile.pan.nap.enabled?=true \
+    bluetooth.profile.pan.panu.enabled?=true \
+    bluetooth.profile.pbap.server.enabled?=true \
+    bluetooth.profile.sap.server.enabled?=true \
+    bluetooth.hardware.power.operating_voltage_mv=3300 \
+    bluetooth.le.disable_apcf_extended_features=1 \
+    bluetooth.sco.disable_enhanced_connection=1 \
+    bluetooth.core.le.vendor_capabilities.enabled=false
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
