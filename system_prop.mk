@@ -28,8 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.enable.sglscale=1 \
     debug.hwui.use_buffer_age=false \
     debug.mdpcomp.idletime=600 \
-    debug.sf.disable_backpressure=1 \
-    debug.sf.latch_unsignaled=1 \
+    debug.renderengine.backend=threaded \
     persist.hwc.mdpcomp.enable=true \
     persist.hwc.ptor.enable=true \
     persist.hwc.pubypass=true
@@ -58,6 +57,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
     persist.radio.apm_sim_not_pwdn=1 \
     ro.telephony.call_ring.multiple=false
+
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false \
+    persist.sys.binary_xml=false \
+    ro.vndk.version=current
+
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.ffs.aio_compat=1 \
+    persist.adb.nonblocking_ffs=0 \
+    ro.adb.nonblocking_ffs=0 \
+    sys.usb.mtp.device_type=2
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
